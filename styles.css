@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-slider, .bg-slide .circle, .bg-slide .circle img, .circle-darktransp {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.circle-darktransp{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.bg-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-slide .circle{
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.bg-slide .circle img{
+    object-fit: cover;
+    transform: rotate(0deg) scale(2);
+}
+
+.bg-slide .circle.large, .circle-darktransp{
+    clip-path: circle(50% at 50% 50%);
+}
+
+.bg-slide .circle.small{
+    clip-path: circle(30% at 50% 50%);
+    z-index: 12;
+}
+
+.bg-slide .content-text{
+    position: absolute;
+    z-index: 100;
+}
+
+.bg-slide .content-text h1{
+    font-size: 60px;
+    letter-spacing: 80px;
+}
+
