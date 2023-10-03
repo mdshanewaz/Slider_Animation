@@ -34,9 +34,7 @@ header{
 }
 
 header .icon{
-    color: #fff;
-    z-index: 100;
-    font-size: 50px;
+    display: none;
 }
 
 .navbar a{
@@ -239,8 +237,38 @@ header .icon{
 @media(max-width: 575px){
     header{
         padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .head{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .logo{
+        left: 0;
+        width: 50%;
+        left: 0;
+    }
+    header .icon{
+        width: 50%;
+        display: block;
+        color: #fff;
+        font-size: 30px;
+    }
+    .icon i{
+        right: 0;
+        float: right;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        background-color: #383737;
+        width: 100vw;
     }
     .navbar .nav-item{
+        text-align: center;
+        padding: 10px 0px;
         display: none;
     }
     .content-text .place h1{
@@ -256,10 +284,5 @@ header .icon{
     }
     .bg-slide .content-text{
         margin-top: 90%;
-    }
-    .icon{
-        color: #fff;
-        z-index: 100;
-        font-size: 50px;
     }
 }

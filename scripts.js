@@ -29,3 +29,15 @@ rotateBtn.addEventListener('click', () => {
 
     slides[index].classList.add('active');
 })
+
+
+function myFunction() {
+    const x = document.querySelectorAll('.nav-item');
+    x.forEach((element) => {
+        if (element.style.display === "block") {
+            element.style.display = "none";
+          } else {
+            element.style.display = "block";
+          }
+    })
+  }
