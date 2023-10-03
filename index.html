@@ -7,31 +7,35 @@
     <title>SLIDER ANIMATION</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
         <a class="logo" href="index.html">LOGO</a>
-
         <nav class="navbar">
-            <a href="index.html">HOME</a>
-            <a href="index.html">ABOUT</a>
-            <a href="index.html">PORJECTS</a>
-            <a href="index.html">SEVICES</a>
-            <a href="index.html">CONTACT</a>
+            <a class="nav-item" href="index.html">HOME</a>
+            <a class="nav-item"  href="index.html">ABOUT</a>
+            <a class="nav-item"  href="index.html">PORJECTS</a>
+            <a class="nav-item"  href="index.html">SEVICES</a>
+            <a class="nav-item"  href="index.html">CONTACT</a>
         </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
     </header>
 
     <div class="container">
-        <div class="bg-slide">
+        <div class="bg-slide active">
             <div class="circle bg">
-                <img src="img/img-1.jpg" alt="">
+                <img src="img/img-1.avif" alt="">
             </div>
             <div class="circle large">
-                <img src="img/img-1.jpg" alt="">
+                <img src="img/img-1.avif" alt="">
             </div>
             <div class="circle small">
-                <img src="img/img-1.jpg" alt="">
+                <img src="img/img-1.avif" alt="">
             </div>
+            
             <div class="content-text">
                 <div class="place">
                     <h1>PYRAMIDS</h1>
@@ -41,9 +45,97 @@
                 </div>
             </div>
         </div>
-        <div class="circle-darktransp">
 
+        <div class="bg-slide">
+            <div class="circle bg">
+                <img src="img/img-2.jpg" alt="">
+            </div>
+            <div class="circle large">
+                <img src="img/img-2.jpg" alt="">
+            </div>
+            <div class="circle small">
+                <img src="img/img-2.jpg" alt="">
+            </div>
+            
+            <div class="content-text">
+                <div class="place">
+                    <h1>SAHARA</h1>
+                </div>
+                <div class="country">
+                    <h2>AFRICA</h2>
+                </div>
+            </div>
         </div>
+
+        <div class="bg-slide">
+            <div class="circle bg">
+                <img src="img/img-3.webp" alt="">
+            </div>
+            <div class="circle large">
+                <img src="img/img-3.webp" alt="">
+            </div>
+            <div class="circle small">
+                <img src="img/img-3.webp" alt="">
+            </div>
+            
+            <div class="content-text">
+                <div class="place">
+                    <h1>SINDORO</h1>
+                </div>
+                <div class="country">
+                    <h2>INDONESIA</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slide">
+            <div class="circle bg">
+                <img src="img/img-4.jpg" alt="">
+            </div>
+            <div class="circle large">
+                <img src="img/img-4.jpg" alt="">
+            </div>
+            <div class="circle small">
+                <img src="img/img-4.jpg" alt="">
+            </div>
+            
+            <div class="content-text">
+                <div class="place">
+                    <h1>DENALI</h1>
+                </div>
+                <div class="country">
+                    <h2>USA</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slide">
+            <div class="circle bg">
+                <img src="img/img-5.avif" alt="">
+            </div>
+            <div class="circle large">
+                <img src="img/img-5.avif" alt="">
+            </div>
+            <div class="circle small">
+                <img src="img/img-5.avif" alt="">
+            </div>
+            
+            <div class="content-text">
+                <div class="place">
+                    <h1>MARMOLADA</h1>
+                </div>
+                <div class="country">
+                    <h2>ITALY</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="circle-darktransp"></div>
+
+        <span class="line"></span>
+        <span class="rotate-btn">
+            <i class='bx bx-rotate-right'></i>
+        </span>
     </div>
 
     <script src="scripts.js"></script>
