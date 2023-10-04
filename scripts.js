@@ -41,3 +41,13 @@ function myFunction() {
           }
     })
   }
+
+  let text = document.getElementById('text');
+
+  window.addEventListener('scroll', () => {
+
+    let value = window.scrollY;
+
+    text.style.margingTop = value * 2.5 + 'px';
+    
+  });
